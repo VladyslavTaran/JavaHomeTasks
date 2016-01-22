@@ -5,8 +5,7 @@ package utils;
  */
 public class ClassString {
     public static void main(String[] args) {
-        String[] strArr = {"2sss ", "dey6 ", "fff"};
-        System.out.println(create(strArr));
+        System.out.println(concatent("string1 ","String2"));
     }
 
     public static String create(String[] strArray)
@@ -24,5 +23,14 @@ public class ClassString {
     public static void print(String strMessage)
     {
         System.out.println(strMessage);
+    }
+
+    public static String concatent(String strString1, String strString2)
+    {
+        String strRes = "";
+
+        strRes = strString1 + strString2;
+
+        return strRes;
     }
 }
