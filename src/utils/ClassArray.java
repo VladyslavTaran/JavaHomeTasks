@@ -14,6 +14,7 @@ public class ClassArray {
     public static int min(int[] intArray){
         int intMin = intArray[0];
         int i=0;
+        i =1;
 
         while (i < intArray.length)
         {
