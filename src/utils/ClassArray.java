@@ -15,7 +15,6 @@ public class ClassArray {
         int intMin = intArray[0];
         int i= 0;
 
-
         while (i < intArray.length)
         {
             if (intArray[i] < intMin)
@@ -42,5 +41,12 @@ public class ClassArray {
         }
 
         return intMax;
+    }
+
+    public static int[] random(int intStart, int intEnd, int intArrElements)
+    {
+
+
+        return intRes;
     }
 }
