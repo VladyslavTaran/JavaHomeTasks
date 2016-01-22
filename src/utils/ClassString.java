@@ -5,7 +5,8 @@ package utils;
  */
 public class ClassString {
     public static void main(String[] args) {
-        System.out.println(concatent("string1 ","String2"));
+        System.out.println(uppercase("sdfTTjj U"));
+        System.out.println(lowercase("sdfTTjj U"));
     }
 
     public static String create(String[] strArray)
@@ -30,6 +31,24 @@ public class ClassString {
         String strRes = "";
 
         strRes = strString1 + strString2;
+
+        return strRes;
+    }
+
+    public static String uppercase(String strInput)
+    {
+        String strRes = "";
+
+        strRes = strInput.toUpperCase();
+
+        return strRes;
+    }
+
+    public static String lowercase(String strInput)
+    {
+        String strRes = "";
+
+        strRes = strInput.toLowerCase();
 
         return strRes;
     }
