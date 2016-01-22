@@ -7,8 +7,8 @@ import java.util.Random;
  */
 public class ClassArray {
     public static void main(String[] args) {
-        int intArr[] = {1,2,3,4,5,6,7};
-        print(redim(intArr,3));
+        int intArr[] = {1,0,3,41,-5,6,2};
+        print(sort(intArr));
     }
 
     public static int min(int[] intArray){
@@ -77,5 +77,28 @@ public class ClassArray {
         }
 
         return intRes;
+    }
+
+    public static int[] sort(int[] intArray){
+        int i;
+        int j;
+        int intTemp;
+        int intArrRes[] = new int[intArray.length];
+
+        for (i = intArray.length - 1;i > 0; i--)
+        {
+            for (j = 0;j < i;j++)
+            {
+                if (intArray[j] > intArray[j+1])
+                {
+                    intTemp = intArray[j];
+                    intArray[j] = intArray[j+1];
+                    intArray[j+1] = intTemp;
+                }
+            }
+        }
+
+        intArrRes = intArray;
+        return intArrRes;
     }
 }
