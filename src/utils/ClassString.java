@@ -5,7 +5,7 @@ package utils;
  */
 public class ClassString {
     public static void main(String[] args) {
-        System.out.println(substring("asdfghrt","ghr"));
+        System.out.println(substring("asdfghrt","ghh"));
     }
 
     public static String create(String[] strArray)
