@@ -20,4 +20,9 @@ public class ClassString {
 
         return strRes;
     }
+
+    public static void print(String strMessage)
+    {
+        System.out.println(strMessage);
+    }
 }
