@@ -5,8 +5,7 @@ package utils;
  */
 public class ClassString {
     public static void main(String[] args) {
-        System.out.println(uppercase("sdfTTjj U"));
-        System.out.println(lowercase("sdfTTjj U"));
+        System.out.println(substring("asdfghrt","ghr"));
     }
 
     public static String create(String[] strArray)
@@ -51,5 +50,29 @@ public class ClassString {
         strRes = strInput.toLowerCase();
 
         return strRes;
+    }
+
+    public static int substring(String strInputString, String strSubString)
+    {
+        int intIndex = -1;
+        int j=0;
+
+        for (int i=0; i < strInputString.length(); i++)
+        {
+            if (j < strSubString.length())
+            {
+                if (strInputString.charAt(i) == strSubString.charAt(j))
+                {
+                    if (j == strSubString.length() - 1)
+                    {
+                        intIndex = i - j;
+                        break;
+                    }
+                    j++;
+                }
+            }
+        }
+
+        return intIndex;
     }
 }
