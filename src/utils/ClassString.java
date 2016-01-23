@@ -5,7 +5,7 @@ package utils;
  */
 public class ClassString {
     public static void main(String[] args) {
-        System.out.println(substring("asdfghrt","ghh"));
+        System.out.println(substring("asdfghrt","hrf"));
     }
 
     public static String create(String[] strArray)
@@ -56,6 +56,7 @@ public class ClassString {
     {
         int intIndex = -1;
         int j=0;
+        boolean blnSubStrWasFound=false;
 
         for (int i=0; i < strInputString.length(); i++)
         {
@@ -63,13 +64,15 @@ public class ClassString {
             {
                 if (strInputString.charAt(i) == strSubString.charAt(j))
                 {
-                    if (j == strSubString.length() - 1)
+                    if (j == (strSubString.length() - 1))
                     {
                         intIndex = i - j;
                         break;
                     }
                     j++;
+                    blnSubStrWasFound = true;
                 }
+                else if (blnSubStrWasFound) j++;
             }
         }
 
