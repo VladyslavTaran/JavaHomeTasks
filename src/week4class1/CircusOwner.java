@@ -59,4 +59,8 @@ public class CircusOwner extends Worker {
             System.out.println("Workattempts of " + artist.getName() + ": " + artist.showedTimes);
         }
     }
+
+    public void sendArtistToWork (Artist artist){
+        artist.work();
+    }
 }

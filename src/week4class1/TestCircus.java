@@ -21,10 +21,10 @@ public class TestCircus {
         artist2.drink(20);
         artist3.drink(70);
 
-        artist1.work();
-        artist2.work();
-        artist3.work();
-        artist3.work();
+        circusOwner.sendArtistToWork(artist1);
+        circusOwner.sendArtistToWork(artist2);
+        circusOwner.sendArtistToWork(artist3);
+        circusOwner.sendArtistToWork(artist3);
 
         circusOwner.paySalaryToAll(2000);
 
@@ -33,5 +33,7 @@ public class TestCircus {
         circusOwner.fireTheMostDrunk();
 
         circusOwner.viewAllArtists();
+
+        ArrayList arr = new ArrayList();
     }
 }
